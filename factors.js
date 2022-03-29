@@ -3,6 +3,7 @@ function factor(n) {
 	//housekeeping vars
 	let factors = [];
 	let answer = "";
+	n = Number(n);
 
 	//handle non-ints
 	if (!Number.isInteger(n)) {
@@ -48,8 +49,12 @@ function factor(n) {
 	//sort array
 	answer = factors.sort((a, b) => a - b);
 
-	//return dict
+	//return array
 	return answer;
 }
 
-console.log(factor(144));
+//export
+module.exports = {factor};
+
+//uncomment to use example
+//console.log(factor(144));
