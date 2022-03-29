@@ -25,7 +25,7 @@ function solve (a, b, c) {
 		return answer;
 	}
 
-	//quadratic formula: [-b ± (b² - 4ac)] / 2a
+	//quadratic formula: [-b ± √(b² - 4ac)] / 2a
 
 	let bottom_line = 2 * a;
 	let radical = radicals.simplify((b * b) - (4 * a * c));
@@ -58,4 +58,4 @@ function solve (a, b, c) {
 	}
 }
 
-console.log(solve(1, 2, 3))
+console.log(solve(5, 10, 20))
